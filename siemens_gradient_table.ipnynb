@@ -1,0 +1,146 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:   500.00, ratio_norm:   500.00, sqrt_ratio_norm:  1095.45\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  1200.00, ratio_norm:  1200.00, sqrt_ratio_norm:  1697.06\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n",
+      "target:  2400.00, ratio_norm:  2400.00, sqrt_ratio_norm:  2400.00\n"
+     ]
+    }
+   ],
+   "source": [
+    "gradient_direction_filenames= [\n",
+    "    'ariel_scheme_shell-1_directions-10_method-IMOC1OptCNLO.txt',\n",
+    "    'ariel_scheme_shell-2_directions-25_method-IMOC1OptCNLO.txt',\n",
+    "    'ariel_scheme_shell-3_directions-30_method-IMOC1OptCNLO.txt']\n",
+    "\n",
+    "pre_norm_shell_directions=[np.loadtxt(filename) for filename in \n",
+    "                           gradient_direction_filenames]\n",
+    "\n",
+    "shell_bvals = [500.0, 1200.0, 2400.0]\n",
+    "max_bval = np.max(shell_bvals)\n",
+    "\n",
+    "bval_ratio_norm_shell_directions = []\n",
+    "for i in range(0, np.size(shell_bvals)):\n",
+    "    bval_ratio_norm_shell_directions.append((shell_bvals[i] / max_bval) * pre_norm_shell_directions[i])\n",
+    "    \n",
+    "sqrt_bval_ratio_norm_shell_directions = []\n",
+    "for i in range(0, np.size(shell_bvals)):\n",
+    "    sqrt_bval_ratio_norm_shell_directions.append(np.sqrt(shell_bvals[i] / max_bval) * pre_norm_shell_directions[i])\n",
+    "    \n",
+    "for i in range(0, np.size(shell_bvals)):\n",
+    "    for j in range(0, np.shape(pre_norm_shell_directions[i])[0]):\n",
+    "        print('target: {0:8.2f}, ratio_norm: {1:8.2f}, sqrt_ratio_norm: {2:8.2f}'.format(\n",
+    "            shell_bvals[i],\n",
+    "            max_bval * np.linalg.norm(bval_ratio_norm_shell_directions[i][j]),\n",
+    "            max_bval * np.linalg.norm(sqrt_bval_ratio_norm_shell_directions[i][j]))) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

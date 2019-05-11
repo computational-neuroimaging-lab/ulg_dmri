@@ -1,0 +1,52 @@
+file: arial_scheme_10_25_30_IMOC1Opt_shell1.txt
+size = 10
+10 unique samples, 0 antipodal samples, 0 repeated samples.
+minimal angle = 38.0849, radian=0.664706 (covering radius)
+maximal angle = 40.3323, radian=0.703932
+mean angle = 38.7626
+std angle = 0.853752
+upper bound (20 points) = 49.016, radian=0.855491
+upper bound (10 points) = 69.5617, radian=1.21408
+electrostaticEnergy (order=2) = 1.5736
+electrostaticEnergy (order=1) = 1.65719
+Spherical packing density = 0.566927
+
+file: arial_scheme_10_25_30_IMOC1Opt_shell2.txt
+size = 25
+25 unique samples, 0 antipodal samples, 0 repeated samples.
+minimal angle = 24.6878, radian=0.430883 (covering radius)
+maximal angle = 30.873, radian=0.538836
+mean angle = 25.98
+std angle = 1.74941
+upper bound (50 points) = 30.922, radian=0.53969
+upper bound (25 points) = 43.8055, radian=0.764551
+electrostaticEnergy (order=2) = 1.90488
+electrostaticEnergy (order=1) = 1.74766
+Spherical packing density = 0.642487
+
+file: arial_scheme_10_25_30_IMOC1Opt_shell3.txt
+size = 30
+30 unique samples, 0 antipodal samples, 0 repeated samples.
+minimal angle = 21.9311, radian=0.38277 (covering radius)
+maximal angle = 27.1057, radian=0.473084
+mean angle = 23.3207
+std angle = 1.27634
+upper bound (60 points) = 28.2194, radian=0.492521
+upper bound (30 points) = 39.9664, radian=0.697545
+electrostaticEnergy (order=2) = 1.99504
+electrostaticEnergy (order=1) = 1.768
+Spherical packing density = 0.620875
+
+Combine 3 orientations
+size = 65
+65 unique samples, 0 antipodal samples, 0 repeated samples.
+minimal angle = 14.9918, radian=0.261657 (covering radius)
+maximal angle = 18.3745, radian=0.320696
+mean angle = 15.7884
+std angle = 0.688762
+upper bound (130 points) = 19.1557, radian=0.334331
+upper bound (65 points) = 27.1092, radian=0.473145
+electrostaticEnergy (order=2) = 2.35656
+electrostaticEnergy (order=1) = 1.83407
+Spherical packing density = 0.617127
+Spherical code cost function = 0.377222
